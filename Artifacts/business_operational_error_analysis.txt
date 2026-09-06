@@ -1,0 +1,24 @@
+BUSINESS / OPERATIONAL ERROR ANALYSIS
+============================================================
+
+The locked test set contains 1614 records, of which 788 were misclassified (48.82%).
+
+The five most frequent misclassification types are:
+
+1. Actual Segment B predicted as Segment C (157 cases).
+   Operational consequence: Customer Segment B is assigned to Segment C. This is particularly important because B-to-C is the largest observed error pair. Segment-specific offers or retention actions could therefore be systematically misdirected.
+
+2. Actual Segment B predicted as Segment A (92 cases).
+   Operational consequence: Customer Segment B is assigned to Segment A. This can lead to unsuitable targeting or customer communication and may cause resources to be directed toward the wrong customer group.
+
+3. Actual Segment A predicted as Segment C (88 cases).
+   Operational consequence: Customer Segment A is assigned to Segment C. Marketing or retention actions designed for Segment C may be applied to an A customer, producing less personalized engagement.
+
+4. Actual Segment A predicted as Segment D (83 cases).
+   Operational consequence: Customer Segment A is assigned to Segment D. A customer may receive a substantially different priority, promotion, or engagement strategy from the one intended for their actual segment.
+
+5. Actual Segment D predicted as Segment A (72 cases).
+   Operational consequence: Customer Segment D is assigned to Segment A. This may cause a customer to receive a substantially different engagement or marketing treatment.
+
+These consequences are operational interpretations rather than measured financial outcomes. The dataset does not provide evidence that these individual errors caused a specific monetary loss.
+Therefore, predicted segments should be treated as decision-support information rather than an automatic basis for high-impact customer decisions.

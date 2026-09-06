@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Customer Segmentation Dataset",
+  "source_url": "https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation",
+  "dataset_version": "Submission dataset pack",
+  "train_file": "Train.csv",
+  "test_file": "Test.csv",
+  "train_rows": 8068,
+  "test_rows": 2627,
+  "train_columns": 11,
+  "test_columns": 10,
+  "train_sha256": "4245166ea666055eaeb151aecf2d16c346cdb230749eb064949684c965bf7355",
+  "test_sha256": "8dad4b0d365a8f8c73d2a1e28a91af5fd33adc036ad4e979cf61a51413d3d9ad",
+  "target": "Segmentation",
+  "accessed_utc": "2026-08-22T18:06:54.664355+00:00"
+}

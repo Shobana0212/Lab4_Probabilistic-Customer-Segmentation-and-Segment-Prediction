@@ -1,0 +1,118 @@
+{
+  "dataset_shape": [
+    8068,
+    11
+  ],
+  "target_column": "Segmentation",
+  "id_column": "ID",
+  "features": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Family_Size",
+    "Work_Experience",
+    "Spending_Score",
+    "Var_1"
+  ],
+  "constant_features": [],
+  "near_constant_features": [],
+  "exact_duplicate_rows": 0,
+  "duplicate_profiles": 417,
+  "duplicate_feature_profiles": 734,
+  "missing_values": [
+    {
+      "feature": "Gender",
+      "missing_count": 0,
+      "missing_percentage": 0.0
+    },
+    {
+      "feature": "Ever_Married",
+      "missing_count": 140,
+      "missing_percentage": 1.74
+    },
+    {
+      "feature": "Age",
+      "missing_count": 0,
+      "missing_percentage": 0.0
+    },
+    {
+      "feature": "Graduated",
+      "missing_count": 78,
+      "missing_percentage": 0.97
+    },
+    {
+      "feature": "Profession",
+      "missing_count": 124,
+      "missing_percentage": 1.54
+    },
+    {
+      "feature": "Family_Size",
+      "missing_count": 335,
+      "missing_percentage": 4.15
+    },
+    {
+      "feature": "Work_Experience",
+      "missing_count": 829,
+      "missing_percentage": 10.28
+    },
+    {
+      "feature": "Spending_Score",
+      "missing_count": 0,
+      "missing_percentage": 0.0
+    },
+    {
+      "feature": "Var_1",
+      "missing_count": 76,
+      "missing_percentage": 0.94
+    }
+  ],
+  "plausibility_checks": [
+    {
+      "feature": "Age",
+      "rule": "0 <= Age <= 120",
+      "invalid_count": 0
+    },
+    {
+      "feature": "Family_Size",
+      "rule": "Family_Size >= 0",
+      "invalid_count": 0
+    },
+    {
+      "feature": "Work_Experience",
+      "rule": "Work_Experience >= 0",
+      "invalid_count": 0
+    }
+  ],
+  "demographic_features": [
+    "Gender",
+    "Age",
+    "Ever_Married",
+    "Graduated",
+    "Profession",
+    "Family_Size"
+  ],
+  "target_distribution": [
+    {
+      "Segmentation": "A",
+      "count": 1972,
+      "percentage": 24.44
+    },
+    {
+      "Segmentation": "B",
+      "count": 1858,
+      "percentage": 23.03
+    },
+    {
+      "Segmentation": "C",
+      "count": 1970,
+      "percentage": 24.42
+    },
+    {
+      "Segmentation": "D",
+      "count": 2268,
+      "percentage": 28.11
+    }
+  ]
+}

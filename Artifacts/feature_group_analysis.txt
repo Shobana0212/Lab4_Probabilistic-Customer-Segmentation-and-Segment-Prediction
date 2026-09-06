@@ -1,0 +1,21 @@
+FEATURE-GROUP ANALYSIS
+======================
+
+The feature-group experiment compared demographic-only,
+behavioral-only, and combined predictors using the same
+CategoricalNB model and the same five cross-validation folds.
+
+The combined feature group achieved a Mean CV Macro F1 of
+0.484523, compared with 0.480242 for
+demographic features and 0.272583 for behavioral
+features.
+
+The combined feature group therefore produced the highest
+observed Mean CV Macro F1 among the evaluated feature groups.
+
+This comparison is descriptive and does not establish causal
+importance of individual feature groups.
+
+No explicitly documented psychographic variables were available
+in the supplied dataset, so a psychographic-only experiment was
+not performed.

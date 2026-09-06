@@ -1,0 +1,30 @@
+{
+  "Demographic": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Family_Size"
+  ],
+  "Psychographic": [],
+  "Behavioral": [
+    "Work_Experience",
+    "Spending_Score"
+  ],
+  "Other": [
+    "Var_1"
+  ],
+  "Combined": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Family_Size",
+    "Work_Experience",
+    "Spending_Score",
+    "Var_1"
+  ],
+  "psychographic_status": "N/A - no explicitly documented psychographic variables in the supplied dataset"
+}

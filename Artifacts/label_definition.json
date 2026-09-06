@@ -1,0 +1,13 @@
+{
+  "target": "Segmentation",
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "number_of_classes": 4,
+  "supervised_target": true,
+  "labels_fabricated": false,
+  "definition": "Segmentation is the predefined customer-segment target supplied with the dataset."
+}

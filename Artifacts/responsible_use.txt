@@ -1,0 +1,77 @@
+RESPONSIBLE USE POLICY
+======================
+
+1. PURPOSE LIMITATION
+---------------------
+The customer segmentation model should only be used for the
+documented customer segmentation purpose for which it was
+developed and evaluated.
+
+2. DATA MINIMIZATION
+--------------------
+Only variables necessary for the segmentation task should be
+used. Customer identifiers should not be used as predictive
+features.
+
+3. PRIVACY
+----------
+Customer information should be handled according to applicable
+privacy, security and organizational requirements. Access to
+identifiable customer information should be restricted.
+
+4. CONSENT AND DATA GOVERNANCE
+------------------------------
+Before operational deployment, the organization should verify
+that the data was collected and processed under an appropriate
+legal and organizational basis and that the proposed use is
+consistent with the original purpose.
+
+5. LABEL GOVERNANCE
+-------------------
+The Segmentation label is treated as a predefined target in this
+study. The notebook does not independently establish the original
+label-generation process. Production use therefore requires
+validation of the business definition and provenance of the labels.
+
+6. DEMOGRAPHIC ATTRIBUTES
+-------------------------
+Gender and Age are included among the predictors. Their use should
+be reviewed for necessity, appropriateness and potential fairness
+implications before deployment.
+
+7. FAIRNESS
+-----------
+Overall performance does not guarantee equal performance across
+groups. Group-level performance should therefore be monitored,
+especially for demographic groups relevant to the deployment
+context.
+
+8. AVOID STEREOTYPING
+---------------------
+Predicted segments are statistical predictions, not fixed
+characteristics of individual customers. They should not be used
+to stereotype customers or infer unsupported personal traits.
+
+9. HUMAN OVERSIGHT
+------------------
+The model should be used as decision support rather than as the
+sole basis for consequential customer decisions. Low-confidence
+predictions should be reviewed by an appropriately trained human.
+
+10. UNCERTAINTY
+--------------
+The confidence threshold must be selected using validation data
+and frozen before locked-test evaluation. The threshold should not
+be changed after observing test performance.
+
+11. MONITORING
+--------------
+If the model is deployed, performance, data drift, class
+distribution changes and group-level performance should be
+periodically reviewed.
+
+12. ACCOUNTABILITY
+------------------
+Model outputs should be traceable to the model version, dataset
+version, preprocessing pipeline and evaluation procedure used to
+generate them.

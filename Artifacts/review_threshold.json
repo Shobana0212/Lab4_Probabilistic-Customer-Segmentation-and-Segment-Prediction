@@ -1,0 +1,12 @@
+{
+  "selected_threshold": 0.5499999999999999,
+  "selection_method": "OOF validation coverage-error tradeoff",
+  "maximum_accepted_error": 0.4,
+  "validation_coverage": 0.5537651069104431,
+  "validation_review_rate": 0.4462348930895569,
+  "validation_accepted_error_rate": 0.3810856183547846,
+  "selection_policy": "Selected the lowest confidence threshold whose validation accepted-prediction error rate is <= 40%, maximizing automatic coverage subject to the validation error constraint.",
+  "test_data_used_for_threshold_selection": false,
+  "random_state": 42,
+  "cv_folds": 5
+}

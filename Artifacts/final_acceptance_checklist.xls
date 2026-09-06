@@ -1,0 +1,38 @@
+Requirement,Status,Details
+Dataset loaded,PASS,Train.csv loaded into dataframe df.
+Target Segmentation exists,PASS,Predefined supervised target.
+Dataset provenance exists,PASS,Dataset source and SHA-256 information.
+Reproducibility manifest exists,PASS,Reproducibility manifest.
+README exists,PASS,Rerun and reproducibility instructions.
+Data quality audit exists,PASS,"Missingness, duplicates, ID and plausibility checks."
+Label provenance/circularity audit exists,PASS,Target provenance and leakage/circularity checks.
+Feature-group ablation completed,PASS,Demographic / psychographic / behavioral / combined.
+Required feature groups present,PASS,"Demographic, Behavioral and Combined results present."
+Psychographic absence documented,PASS,No dedicated psychographic variables were available.
+Core model CV results exist,PASS,Five-fold CV model comparison.
+CV class-wise metrics exist,PASS,Class-wise validation metrics.
+All four core models evaluated,PASS,"DummyClassifier, GaussianNB, BernoulliNB and CategoricalNB."
+Five-fold Stratified CV configured,PASS,"5-fold StratifiedKFold, shuffle=True, random_state=42."
+CategoricalNB selected as final model,PASS,Selected model is CategoricalNB_mixed.
+CV Macro F1 available,PASS,Mean five-fold CV Macro F1 = 0.484523.
+Training/inference timing recorded,PASS,Training and inference timing saved.
+Confusion matrix counts saved,PASS,Count confusion matrix.
+Row-normalized confusion matrix saved,PASS,Row-normalized confusion matrix.
+Test class-wise metrics saved,PASS,"Precision, recall, F1 and support."
+Locked-test Accuracy available,PASS,Accuracy = 0.511772.
+Locked-test Macro F1 available,PASS,Macro F1 = 0.485284.
+Locked-test Weighted F1 available,PASS,Weighted F1 = 0.495491.
+OOF confidence analysis exists,PASS,Validation OOF confidence predictions.
+Validation coverage-error tradeoff exists,PASS,Validation coverage/error analysis.
+Review threshold artifact exists,PASS,Validation-selected frozen threshold.
+Review threshold = 0.55,PASS,Frozen threshold = 0.5499999999999999
+Threshold selected without test data,PASS,OOF validation only.
+Business/operational error analysis exists,PASS,Operational consequences documented.
+At least five important error pairs documented,PASS,Five highest-frequency error pairs documented.
+Responsible analytics documentation exists,PASS,"Privacy, consent, fairness, misuse and human oversight."
+Fairness/subgroup analysis exists,PASS,Gender and age-group performance reviewed.
+Saved final model exists,PASS,Serialized final model found.
+Model reload verification passed,PASS,Saved reload fixture confirms identical predictions.
+New-customer prediction demonstrated,PASS,"Prediction, confidence, threshold and review decision saved."
+No [VALUE] placeholders in final reports,PASS,Final report artifacts contain actual values.
+No broken Transformer comparison,PASS,"Transformer is an advanced extension, not part of the core NB requirement."

@@ -1,0 +1,18 @@
+{
+  "Dummy_most_frequent": {
+    "representation": "binned numeric + one-hot categorical",
+    "model": "DummyClassifier(strategy='most_frequent')"
+  },
+  "GaussianNB_numeric_only": {
+    "representation": "median-imputed continuous numeric features",
+    "model": "GaussianNB(var_smoothing=1e-9)"
+  },
+  "BernoulliNB": {
+    "representation": "binned numeric + one-hot categorical",
+    "model": "BernoulliNB(alpha=1.0, binarize=0.0)"
+  },
+  "CategoricalNB_mixed": {
+    "representation": "5-bin numeric + non-negative categorical codes",
+    "model": "CategoricalNB(alpha=1.0)"
+  }
+}

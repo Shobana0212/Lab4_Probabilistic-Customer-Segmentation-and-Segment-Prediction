@@ -1,0 +1,185 @@
+{
+  "lab": "MDI3003 Lab 04",
+  "random_seed": 42,
+  "dataset": {
+    "train_file": "Train.csv",
+    "train_rows": 8068,
+    "train_columns": 11,
+    "train_sha256": "4245166ea666055eaeb151aecf2d16c346cdb230749eb064949684c965bf7355",
+    "test_sha256": null,
+    "source_url": null,
+    "access_date_utc": null
+  },
+  "target": {
+    "target": "Segmentation",
+    "classes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "task_type": "Supervised multiclass classification",
+    "predefined_target": true,
+    "clustering": false,
+    "label_generation_rule_reconstructed": false,
+    "note": "Segmentation is treated as the predefined target label supplied with the dataset. The notebook does not independently reconstruct the historical/business rule that generated the labels."
+  },
+  "features": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Work_Experience",
+    "Spending_Score",
+    "Family_Size",
+    "Var_1"
+  ],
+  "feature_groups": {
+    "demographic": [
+      "Gender",
+      "Ever_Married",
+      "Age",
+      "Graduated",
+      "Profession",
+      "Family_Size"
+    ],
+    "psychographic": [],
+    "behavioral": [
+      "Work_Experience",
+      "Spending_Score"
+    ],
+    "other": [
+      "Var_1"
+    ],
+    "combined": [
+      "Gender",
+      "Ever_Married",
+      "Age",
+      "Graduated",
+      "Profession",
+      "Work_Experience",
+      "Spending_Score",
+      "Family_Size",
+      "Var_1"
+    ]
+  },
+  "split": {
+    "method": "Stratified train/test split",
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "Segmentation"
+  },
+  "cv": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "observations": {
+    "training_rows_after_split": 6454,
+    "locked_test_rows": 1614
+  },
+  "model_selection": {
+    "selection_metric": "Mean five-fold CV Macro F1",
+    "secondary_criterion": "CV Macro F1 standard deviation",
+    "selected_model": "CategoricalNB_mixed",
+    "cv_macro_f1_mean": 0.484523,
+    "cv_macro_f1_sd": 0.010115
+  },
+  "locked_test": {
+    "test_accuracy": 0.5117719950433705,
+    "test_macro_f1": 0.48528393969993966,
+    "test_weighted_f1": 0.4954911555490408
+  },
+  "review_policy": {
+    "threshold": 0.5499999999999999,
+    "selection_rule": "Selected using validation-only OOF confidence/error trade-off; frozen before locked-test use.",
+    "threshold_frozen_before_test": true
+  },
+  "schema": [
+    {
+      "column": "ID",
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "unique_values": 8068
+    },
+    {
+      "column": "Gender",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "unique_values": 2
+    },
+    {
+      "column": "Ever_Married",
+      "dtype": "object",
+      "missing_count": 140,
+      "missing_percent": 1.7352503718393655,
+      "unique_values": 2
+    },
+    {
+      "column": "Age",
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "unique_values": 67
+    },
+    {
+      "column": "Graduated",
+      "dtype": "object",
+      "missing_count": 78,
+      "missing_percent": 0.9667823500247893,
+      "unique_values": 2
+    },
+    {
+      "column": "Profession",
+      "dtype": "object",
+      "missing_count": 124,
+      "missing_percent": 1.5369360436291521,
+      "unique_values": 9
+    },
+    {
+      "column": "Work_Experience",
+      "dtype": "float64",
+      "missing_count": 829,
+      "missing_percent": 10.27516113039167,
+      "unique_values": 15
+    },
+    {
+      "column": "Spending_Score",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "unique_values": 3
+    },
+    {
+      "column": "Family_Size",
+      "dtype": "float64",
+      "missing_count": 335,
+      "missing_percent": 4.152206246901339,
+      "unique_values": 9
+    },
+    {
+      "column": "Var_1",
+      "dtype": "object",
+      "missing_count": 76,
+      "missing_percent": 0.9419930589985127,
+      "unique_values": 7
+    },
+    {
+      "column": "Segmentation",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percent": 0.0,
+      "unique_values": 4
+    }
+  ],
+  "environment": {
+    "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas_version": "2.2.3",
+    "scikit_learn_version": "1.9.0"
+  }
+}

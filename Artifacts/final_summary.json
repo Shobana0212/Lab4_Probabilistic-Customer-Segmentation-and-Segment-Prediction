@@ -1,0 +1,28 @@
+{
+  "selected_model": "CategoricalNB_mixed",
+  "selected_features": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Work_Experience",
+    "Spending_Score",
+    "Family_Size",
+    "Var_1"
+  ],
+  "cv_macro_f1": 0.4845457047058561,
+  "cv_macro_f1_sd": null,
+  "combined_feature_group_macro_f1": 0.4845234483606647,
+  "locked_test_accuracy": 0.5117719950433705,
+  "locked_test_macro_f1": 0.48528393969993966,
+  "locked_test_weighted_f1": 0.4954911555490408,
+  "weakest_class": "B",
+  "weakest_class_recall": 0.22311827956989247,
+  "weakest_class_f1": 0.2785234899328859,
+  "review_threshold": 0.5499999999999999,
+  "validation_coverage": 0.5537651069104431,
+  "validation_accepted_error": 0.3810856183547846,
+  "psychographic_features": [],
+  "psychographic_status": "N/A - no explicitly documented psychographic variables in the supplied dataset"
+}

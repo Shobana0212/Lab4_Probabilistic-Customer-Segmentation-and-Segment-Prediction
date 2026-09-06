@@ -1,0 +1,33 @@
+{
+  "demographic": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Family_Size"
+  ],
+  "psychographic": [],
+  "behavioral": [
+    "Work_Experience",
+    "Spending_Score"
+  ],
+  "other": [
+    "Var_1"
+  ],
+  "all_features": [
+    "Gender",
+    "Ever_Married",
+    "Age",
+    "Graduated",
+    "Profession",
+    "Family_Size",
+    "Work_Experience",
+    "Spending_Score",
+    "Var_1"
+  ],
+  "excluded": [
+    "ID"
+  ],
+  "target": "Segmentation"
+}

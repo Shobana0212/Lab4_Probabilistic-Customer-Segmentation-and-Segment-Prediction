@@ -1,0 +1,41 @@
+FINAL CONCLUSION
+============================================================
+
+This study developed a leakage-safe supervised customer segmentation prediction workflow using predefined Segmentation labels.
+
+Four core classifiers were evaluated: DummyClassifier, GaussianNB, BernoulliNB and mixed-feature CategoricalNB.
+
+The selected model, CategoricalNB_mixed, achieved a validation Macro F1 of 0.4845.
+
+The combined feature group achieved a mean validation Macro F1 of approximately 0.4845.
+
+No explicitly documented psychographic variables were available in the supplied dataset. Therefore, no psychographic features were fabricated.
+
+On the locked test split, the selected model achieved accuracy of 0.5118, Macro F1 of 0.4853, and weighted F1 of 0.4955.
+
+Class B had the lowest test recall (0.2231) and F1 (0.2785) among the evaluated classes. This indicates that this segment is more difficult for the model to identify correctly.
+
+The difference between CategoricalNB and BernoulliNB is relatively small. Therefore, the results should not be interpreted as definitive evidence that CategoricalNB is universally superior.
+
+A confidence-based review policy was selected using out-of-fold validation predictions, with a frozen confidence threshold of 0.55.
+Validation automatic coverage was 55.38%
+, with an accepted-prediction error rate of 38.11%.
+
+Overall, the model is suitable as an experimental decision-support system for this laboratory dataset, but the observed performance does not justify treating predicted segments as error-free or using them as the sole basis for high-impact customer decisions.
+
+RECOMMENDATIONS
+============================================================
+1. Use Macro F1 and class-wise recall/F1 rather than accuracy alone.
+2. Give particular attention to the weakest-performing segment.
+3. Keep the validation-selected confidence threshold frozen before test evaluation.
+4. Route low-confidence predictions to human review.
+5. Verify the provenance and business meaning of the Segmentation labels before deployment.
+6. Review the necessity and fairness implications of demographic variables such as Gender and Age.
+7. Do not interpret predicted segments as fixed characteristics of individual customers.
+8. Monitor model performance, class distribution, data drift and group-level performance if deployed.
+9. Preserve dataset checksum, feature manifest, preprocessing pipeline, model and evaluation artifacts.
+10. Evaluate additional models only using the same leakage-safe fixed-split validation protocol.
+
+LIMITATION
+============================================================
+The laboratory dataset does not establish real-world financial, customer-satisfaction or business outcomes associated with individual classification errors. Therefore, operational consequences described in the analysis should be interpreted as potential risks rather than measured impacts.

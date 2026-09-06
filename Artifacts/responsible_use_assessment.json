@@ -1,0 +1,64 @@
+{
+  "features_reviewed": [
+    "Gender",
+    "Age",
+    "Ever_Married",
+    "Graduated",
+    "Profession",
+    "Family_Size",
+    "Work_Experience",
+    "Spending_Score",
+    "Var_1"
+  ],
+  "demographic_attributes": [
+    "Gender",
+    "Age"
+  ],
+  "assessment": {
+    "privacy_and_data_minimization": {
+      "principle": "Data minimization",
+      "assessment": "Only variables required for the segmentation prediction task should be retained. Customer identifiers such as ID are excluded from model predictors.",
+      "recommendation": "Remove unnecessary identifiers and avoid collecting additional personal information unless there is a documented purpose."
+    },
+    "consent_and_purpose_limitation": {
+      "principle": "Consent and purpose limitation",
+      "assessment": "The notebook does not establish the original consent conditions under which the dataset was collected.",
+      "recommendation": "Before production use, verify that collection and processing were authorized for customer segmentation and that the intended use is consistent with the originally communicated purpose."
+    },
+    "de_identification": {
+      "principle": "De-identification",
+      "assessment": "The customer ID is treated as an identifier and is excluded from model features.",
+      "recommendation": "Use de-identified or pseudonymized data where possible and restrict access to identifiable customer information."
+    },
+    "sensitive_attribute_review": {
+      "principle": "Sensitive/demographic attribute review",
+      "assessment": "Gender and Age are present among the predictors and may contribute to differences in model performance between demographic groups.",
+      "recommendation": "Evaluate whether these attributes are necessary and appropriate for the intended use. If retained, monitor performance and fairness across relevant groups."
+    },
+    "historical_label_bias": {
+      "principle": "Historical label bias",
+      "assessment": "The Segmentation label is treated as a predefined target supplied with the dataset. The notebook does not independently establish how the original labels were generated.",
+      "recommendation": "Before deployment, validate the business definition and historical construction of the segment labels. Check whether historical decisions or assumptions are embedded in the target."
+    },
+    "stereotyping_and_misuse": {
+      "principle": "Avoid stereotyping and misuse",
+      "assessment": "Predicted customer segments are statistical categories and should not be interpreted as fixed characteristics of individual people.",
+      "recommendation": "Do not use predicted segments to stereotype customers or make unsupported assumptions about their preferences, value, behaviour, or personal characteristics."
+    },
+    "fairness": {
+      "principle": "Fairness",
+      "assessment": "Group-level performance should be monitored because overall Macro F1 can conceal differences in performance between demographic groups.",
+      "recommendation": "Review accuracy, Macro F1, recall and other appropriate metrics across relevant demographic groups before production deployment."
+    },
+    "human_oversight": {
+      "principle": "Human oversight",
+      "assessment": "The model is not sufficiently accurate to justify unreviewed high-impact automated decisions.",
+      "recommendation": "Use the model as decision support. Low-confidence predictions should be routed for human review using the validation-selected review threshold."
+    },
+    "uncertainty_and_abstention": {
+      "principle": "Uncertainty-aware decisions",
+      "assessment": "Posterior confidence and a validation-selected review threshold are available in the notebook.",
+      "recommendation": "Avoid automatic action when model confidence is below the frozen threshold. Treat these cases as requiring human review."
+    }
+  }
+}
