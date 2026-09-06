@@ -1,0 +1,2 @@
+model,feature_group,accuracy,macro_f1,weighted_f1,cv_macro_f1,cv_macro_f1_sd
+CategoricalNB_mixed,Combined,0.5117719950433705,0.48528393969993966,0.4954911555490408,0.4845234483606647,0.010114826779852539

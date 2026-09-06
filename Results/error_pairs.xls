@@ -1,0 +1,13 @@
+actual,predicted,count
+B,C,157
+B,A,92
+A,C,88
+A,D,83
+D,A,72
+A,B,66
+C,D,54
+C,A,48
+D,B,41
+B,D,40
+C,B,34
+D,C,13

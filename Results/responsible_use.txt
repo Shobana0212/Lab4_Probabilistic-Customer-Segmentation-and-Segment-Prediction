@@ -1,0 +1,62 @@
+
+RESPONSIBLE USE, PRIVACY, FAIRNESS AND LIMITATIONS
+==================================================
+
+1. PRIVACY
+Customer profiling can involve sensitive demographic and behavioral
+information. Customer IDs are used only for traceability and are not
+included as predictors. Direct identifiers should be removed before model
+training or deployment. Access to customer-level predictions should be
+restricted to authorized users.
+
+2. FAIRNESS
+The model performance is not uniform across the four segments. Segment B
+has substantially lower recall and F1 than Segments C and D. Therefore,
+aggregate accuracy alone should not be used to judge model quality.
+Subgroup performance should be monitored before any operational deployment.
+
+3. STEREOTYPING AND PROFILING
+Demographic variables such as age, gender, marital status, graduation,
+profession, and family size may encode social or economic differences.
+Predictions should not be interpreted as statements about a person's
+identity, worth, ability, or behavior. The model predicts the predefined
+business label; it does not discover an objective or inherent customer type.
+
+4. MISUSE RISK
+Predicted segments should not be used as the sole basis for decisions that
+could unfairly restrict access, pricing, employment, credit, essential
+services, or other opportunities. Human review should be available for
+uncertain or business-critical cases.
+
+5. CONFIDENCE
+Naive Bayes posterior probabilities represent model confidence under the
+model assumptions. They should not be treated as certainty about a
+customer's true segment.
+
+6. MODEL LIMITATIONS
+Naive Bayes assumes conditional independence among predictors given the
+class. This assumption may not hold for customer attributes. The model also
+depends on the quality, representativeness, and provenance of the supplied
+dataset and its predefined labels.
+
+7. LABEL LIMITATION
+The target Segmentation label is an existing predefined business label.
+The classifier learns to reproduce that label. It does not establish that
+the four segments are naturally occurring customer groups.
+
+8. ERROR HANDLING
+Segment B has the weakest classification performance. The largest observed
+error pattern is B -> C, followed by B -> A. These errors indicate that
+some customers are difficult to distinguish using the available features.
+
+9. HUMAN OVERSIGHT
+Low-confidence predictions can be routed for review using the frozen
+validation-derived review threshold. Human review should be used for
+uncertain or consequential cases rather than treating automated predictions
+as unquestionable decisions.
+
+10. BUSINESS RECOMMENDATION
+Use the model primarily as decision support for aggregate customer analysis.
+Monitor class-wise performance, review uncertain cases, periodically audit
+data quality and label provenance, and reassess performance when the
+customer population or business process changes.

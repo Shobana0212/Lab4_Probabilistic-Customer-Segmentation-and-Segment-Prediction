@@ -1,0 +1,10 @@
+feature,available_before_label,post_label_proxy,decision,reason
+Gender,True,False,Keep,Customer attribute available as an input feature.
+Ever_Married,True,False,Keep,Customer demographic attribute.
+Age,True,False,Keep,Customer demographic attribute.
+Graduated,True,False,Keep,Customer demographic attribute.
+Profession,True,False,Keep,Customer occupation attribute.
+Family_Size,True,False,Keep,Customer/family attribute.
+Work_Experience,True,False,Keep,Customer employment attribute.
+Spending_Score,True,False,Keep,Pre-existing customer behavioural feature.
+Var_1,True,False,Keep,Pre-existing anonymised categorical feature.

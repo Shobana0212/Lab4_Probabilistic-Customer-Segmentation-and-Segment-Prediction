@@ -1,0 +1,2 @@
+fixture_size,predictions_identical,model_path
+20,True,lab04_outputs\models\final_model_reload_test.pkl

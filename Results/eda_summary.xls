@@ -1,0 +1,10 @@
+Feature,Missing_Count,Missing_Percent,Unique_Values
+Gender,0,0.0,2
+Ever_Married,140,1.7352503718393655,3
+Age,0,0.0,67
+Graduated,78,0.9667823500247893,3
+Profession,124,1.5369360436291521,10
+Family_Size,335,4.152206246901339,10
+Work_Experience,829,10.27516113039167,16
+Spending_Score,0,0.0,3
+Var_1,76,0.9419930589985127,8

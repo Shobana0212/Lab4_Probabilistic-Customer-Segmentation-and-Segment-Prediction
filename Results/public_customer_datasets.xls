@@ -1,0 +1,4 @@
+dataset,source_url,target,supervised,suitability
+Customer Segmentation Dataset,https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation,Segmentation,True,Suitable for multiclass customer segmentation.
+UCI Bank Marketing,https://archive.ics.uci.edu/dataset/222/bank%2Bmarketing,y,True,Suitable for supervised customer/client response classification.
+UCI Online Shoppers Purchasing Intention,https://archive.ics.uci.edu/dataset/468/online%2Bshoppers%2Bpurchasing%2Bintention%2Bdataset,Revenue,True,Suitable for supervised customer purchasing-intention classification.

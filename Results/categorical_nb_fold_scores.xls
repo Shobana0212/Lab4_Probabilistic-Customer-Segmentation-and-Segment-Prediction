@@ -1,0 +1,6 @@
+model,fold,macro_f1
+CategoricalNB_mixed,1,0.4963913481334721
+CategoricalNB_mixed,2,0.47098763857179093
+CategoricalNB_mixed,3,0.490295698427646
+CategoricalNB_mixed,4,0.4871313221668238
+CategoricalNB_mixed,5,0.4778112345035904

@@ -1,0 +1,13 @@
+actual_segment,predicted_segment,error_count,operational_consequence
+B,C,157,Customer Segment B is assigned to Segment C. This is particularly important because B-to-C is the largest observed error pair. Segment-specific offers or retention actions could therefore be systematically misdirected.
+B,A,92,Customer Segment B is assigned to Segment A. This can lead to unsuitable targeting or customer communication and may cause resources to be directed toward the wrong customer group.
+A,C,88,"Customer Segment A is assigned to Segment C. Marketing or retention actions designed for Segment C may be applied to an A customer, producing less personalized engagement."
+A,D,83,"Customer Segment A is assigned to Segment D. A customer may receive a substantially different priority, promotion, or engagement strategy from the one intended for their actual segment."
+D,A,72,Customer Segment D is assigned to Segment A. This may cause a customer to receive a substantially different engagement or marketing treatment.
+A,B,66,"Customer Segment A is assigned to Segment B. A segment-specific campaign may receive the wrong offer or communication strategy, reducing relevance and potentially increasing campaign waste."
+C,D,54,Customer Segment C is assigned to Segment D. Segment-dependent engagement or promotional decisions may be incorrectly prioritized.
+C,A,48,Customer Segment C is assigned to Segment A. Customer targeting based on the predicted segment may become less relevant.
+D,B,41,Customer Segment D is assigned to Segment B. Customer communication or promotional strategies may be less appropriate for the customer's actual segment.
+B,D,40,Customer Segment B is assigned to Segment D. The customer could receive an inappropriate level of engagement or promotional treatment.
+C,B,34,Customer Segment C is assigned to Segment B. A campaign or service strategy intended for C may not be applied even though it would have been appropriate.
+D,C,13,Customer Segment D is assigned to Segment C. The predicted segment may result in an unsuitable customer strategy or offer.

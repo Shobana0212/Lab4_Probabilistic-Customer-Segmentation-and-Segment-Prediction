@@ -1,0 +1,6 @@
+Error_Pattern,Observed_Count,Interpretation
+B -> C,157,Segment B customers are frequently predicted as C.
+B -> A,92,Segment B customers are also frequently predicted as A.
+A -> C,88,Some A customers are predicted as C.
+A -> D,83,Some A customers are predicted as D.
+D -> A,72,Some D customers are predicted as A.

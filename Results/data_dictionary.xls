@@ -1,0 +1,12 @@
+Feature,Description,Role,Data_Type,Missing_Count,Unique_Values
+ID,Unique customer identifier,Identifier,int64,0,8068
+Gender,Gender of the customer,Predictor,object,0,2
+Ever_Married,Whether the customer has ever been married,Predictor,object,140,3
+Age,Age of the customer,Predictor,int64,0,67
+Graduated,Whether the customer is a graduate,Predictor,object,78,3
+Profession,Profession of the customer,Predictor,object,124,10
+Work_Experience,Work experience of the customer,Predictor,float64,829,16
+Spending_Score,Customer spending score,Predictor,object,0,3
+Family_Size,Number of family members,Predictor,float64,335,10
+Var_1,Anonymised customer category,Predictor,object,76,8
+Segmentation,Predefined customer segment,Target,object,0,4

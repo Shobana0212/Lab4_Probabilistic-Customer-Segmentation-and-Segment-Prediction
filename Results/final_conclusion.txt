@@ -1,0 +1,32 @@
+
+FINAL CONCLUSION
+================
+
+The experiment developed and evaluated supervised Naive Bayes classifiers
+for predicting the predefined customer segments A, B, C, and D using
+Dataset A.
+
+Four core models were compared using the same five-fold cross-validation
+procedure. CategoricalNB achieved the highest mean CV Macro F1 of
+0.4845 with a fold-level SD of
+0.0101. The combined representation
+containing all nine predictors was selected.
+
+The selected CategoricalNB model was then trained on the complete training
+set and evaluated once on the locked test set. The final test accuracy was
+0.5118, Macro F1 was 0.4853, and weighted F1 was
+0.4955.
+
+Class-wise analysis showed that Segment B was the most difficult class,
+while Segment D had the strongest classification performance. The largest
+confusion pattern was B -> C, followed by B -> A.
+
+The results demonstrate that Naive Bayes can provide a useful baseline for
+mixed-type customer segment prediction, but the moderate Macro F1 and
+unequal class-wise performance indicate that predictions should be used
+carefully.
+
+The model should be treated as decision support rather than as a definitive
+description of individual customers. Privacy protection, fairness
+monitoring, human review, label provenance, and periodic reassessment are
+important before considering operational use.

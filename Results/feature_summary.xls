@@ -1,0 +1,10 @@
+Feature,Data_Type,Group,Missing_Count,Missing_Percent,Unique_Values
+Gender,object,Demographic,0,0.0,2
+Ever_Married,object,Demographic,140,1.7352503718393655,3
+Age,int64,Demographic,0,0.0,67
+Graduated,object,Demographic,78,0.9667823500247893,3
+Profession,object,Demographic,124,1.5369360436291521,10
+Family_Size,float64,Demographic,335,4.152206246901339,10
+Work_Experience,float64,Behavioral,829,10.27516113039167,16
+Spending_Score,object,Behavioral,0,0.0,3
+Var_1,object,Other,76,0.9419930589985127,8

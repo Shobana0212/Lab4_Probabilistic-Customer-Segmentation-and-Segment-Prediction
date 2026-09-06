@@ -1,0 +1,15 @@
+Item,Result
+Dataset,Dataset A - Customer Segmentation
+Number of customers,8068
+Number of predictors,9
+Number of classes,4
+Selected model,CategoricalNB
+Selected feature group,Combined
+CV Macro F1,0.484523
+CV Macro F1 SD,0.010115
+CV Weighted F1,0.493837
+Test Accuracy,0.511772
+Test Macro F1,0.485284
+Test Weighted F1,0.495491
+Weakest segment,B
+Strongest segment,D

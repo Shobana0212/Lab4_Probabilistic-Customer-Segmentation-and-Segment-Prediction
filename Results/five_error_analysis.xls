@@ -1,0 +1,6 @@
+ID,Segmentation,Predicted_Segment,Prediction_Confidence,Probability_Margin,Gender,Ever_Married,Age,Graduated,Profession,Family_Size,Work_Experience,Spending_Score,Var_1
+462515,B,C,0.3212033695369675,0.017071108045019545,Male,Yes,42,No,Doctor,5.0,5.0,Average,Cat_6
+462949,B,A,0.3229405422383606,0.037754082521769095,Male,Yes,35,No,Homemaker,3.0,1.0,Average,Cat_6
+464404,A,C,0.32407596090676954,0.02012733707112474,Male,No,89,Yes,Artist,,1.0,Low,Cat_6
+464433,A,D,0.3339857170252367,0.011391554782256896,Male,No,33,Yes,Artist,,,Low,Cat_2
+467624,D,A,0.3258116072670841,0.040153589229796005,Male,Yes,35,No,Entertainment,5.0,0.0,Average,Cat_6

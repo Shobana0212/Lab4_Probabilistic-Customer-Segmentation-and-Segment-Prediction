@@ -1,0 +1,10 @@
+Feature,Available_before_label,Potential_label_proxy,Decision
+Gender,Yes,No documented evidence,Keep
+Ever_Married,Yes,No documented evidence,Keep
+Age,Yes,No documented evidence,Keep
+Graduated,Yes,No documented evidence,Keep
+Profession,Yes,No documented evidence,Keep
+Family_Size,Yes,No documented evidence,Keep
+Work_Experience,Yes,No documented evidence,Keep
+Spending_Score,Yes,No documented evidence,Keep
+Var_1,Yes,No documented evidence,Keep
